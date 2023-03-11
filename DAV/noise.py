@@ -34,7 +34,7 @@ frames_freq_domian = np.fft.fft(frames_wave)
 rames_freq_domian = fftpack.fft(frames_wave)
 
 # Above value is in complex number but we want absolute number
-# This will give us the frequency we want
+# This will give us the frequency we need
 magnitude = np.abs(frames_freq_domian)  # Or ampliude ?
 phase = np.angle(frames_freq_domian) # Normally we are not interested in phase information, its only used in reconstruction.
 
